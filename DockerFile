@@ -4,3 +4,5 @@ RUN apt install apt-transport-https ca-certificates curl software-properties-com
     add-apt-repository ppa:musicbrainz-developers/stable -y && \ 
     apt update && \
     apt install picard language-pack-en -y
+
+COPY /root /
