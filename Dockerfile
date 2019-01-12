@@ -8,6 +8,8 @@ RUN apt install apt-transport-https ca-certificates curl software-properties-com
 RUN locale-gen en_GB.UTF-8 && \
     update-locale LANG=en_GB.UTF-8 && \
     echo "export LANG=en_GB.UTF-8" >> /etc/skel/.bashrc && \
-    echo "export LC_ALL=en_GB.UTF-8" >> /etc/skel/.bashrc
+    echo "export LC_ALL=en_GB.UTF-8" >> /etc/skel/.bashrc && \
+    echo "picard &" >> /etc/xdg/openbox/autostart
+
 
 COPY /root /
