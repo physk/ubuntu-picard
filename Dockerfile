@@ -6,7 +6,7 @@ RUN apt install apt-transport-https ca-certificates curl software-properties-com
     apt install picard language-pack-en -y && \
     locale-gen en_GB.UTF-8 && \
     update-locale LANG=en_GB.UTF-8 && \
-    echo 'echo "export LANG=en_GB.UTF-8" >> /etc/skel/.bashrc' && \
-    echo 'echo "export LC_ALL=en_GB.UTF-8" >> /etc/skel/.bashrc'
+    echo "export LANG=en_GB.UTF-8" >> /etc/skel/.bashrc && \
+    echo "export LC_ALL=en_GB.UTF-8" >> /etc/skel/.bashrc
 
 COPY /root /
